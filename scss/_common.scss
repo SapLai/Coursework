@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    color: $color_main;
+    min-width: 320px;
+    position: relative;
+    width: 100%;
+}
+html{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    background: linear-gradient(180deg, #D4DEB7 50%, rgba(79, 159, 217, 0) 100%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    .wrap-header{
+        width: 90%;
+        margin:auto;
+        max-width: 1800px;
+        display: flex;
+        justify-content: space-between;
+        .logo-header{
+            span{
+                font-size: 24px;
+                border-bottom: 2px solid rgb(116, 116, 116);
+            }
+        }
+        .header-btn{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span+span{
+                margin-left: 8px;
+            }
+            span{
+                a{
+                    background-color: rgb(69, 158, 69);
+                    color:#fff;
+                    width: 180px;
+                    border-radius: 5px;
+                    transition: .2s;
+                    text-decoration: none;
+                    padding: 5px;
+                }
+                a:hover{
+                    background-color: rgb(46, 121, 46);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    transition: .2s;
+                    cursor: pointer;
+                }
+            }
+            #pdf-file{
+                span{
+                    background:tomato;
+                    color:#fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+                span:hover{
+                    background-color: rgb(160, 65, 48);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    transition: .2s;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+}
+#content{
+    .sgn{
+        form{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            p{
+                margin-bottom: 10px;
+            }
+            
+            input{
+                outline: none;
+                height: 25px;
+                width: 200px;
+                border: 1px solid silver;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            button{
+                height: 24px;
+                color:#fff;
+                background:lightblue;
+                border: none;
+                width: 140px;
+                margin-top: 10px;
+                transition: .2s;
+            }
+            button:hover{
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                transition: .2s;
+            }
+            #new-sgn{
+                margin-top: 10px;
+            }
+            #demo{
+                background:tomato;
+                color:#fff;
+                height: 25px;
+                width: 200px;
+                font-size: 14px;
+                line-height: 25px;
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+    .card-wrap{
+        margin: 120px auto;
+        .card+.card{
+            margin-top: 20px;
+        }
+        .card{
+            margin: auto;
+            border-radius: 5px;
+            width: 400px;
+            background: linear-gradient(180deg, #D4DEB7 50%, rgba(79, 159, 217, 0) 100%);
+            padding: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            #name{
+                font-size: 20px;
+            }
+            #name-no-done{
+                color:tomato;
+                font-size: 20px;
+            }
+            #name-done{
+                color:rgb(42, 158, 48);
+                font-size: 20px;
+            }
+            #description{
+                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .btn-options{
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                #delete{
+                    background-color:tomato;
+                    color:#fff;
+                    cursor: pointer;
+                    padding: 4px;
+                    border-radius:5px;
+                }
+                #reg{
+                    background-color:rgb(83, 150, 172);
+                    color:#fff;
+                    cursor: pointer;
+                    padding: 4px;
+                    border-radius:5px;
+                }
+                 #done{
+                    background-color:rgb(85, 170, 45);
+                    color:#fff;
+                    cursor: pointer;
+                    padding: 4px;
+                    border-radius:5px;
+                 }
+            }
+        }
+    }
+    .add{
+        margin: 120px auto;
+        form{
+            width: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            input{
+                margin-top: 10px;
+                outline: none;
+                border: 1px solid silver;
+                border-radius: 5px;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+            textarea{
+                margin-top: 10px;
+                outline: none;
+                border: 1px solid silver;
+                border-radius: 5px;
+            }
+            button{
+                margin-top: 10px;
+                border: none;
+                border-radius:5px;
+                width: 160px;
+                height: 25px;
+                background-color:rgb(73, 177, 73);
+                color:#fff;
+                font-size: 16px;
+            }
+        }
+        
+    }
+}
+#site {
+    min-width: 320px;
+    overflow: hidden;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../images/site_bg.png) 0 0 repeat;
+    position: relative;
+}
+
+.footer {
+    display: table-row;
+    height: 1px;
+}
